@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <script defer src="test.js"></script>
+    <title>Shakithiyan KV - Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Shakithiyan KV</h1>
+        <p>Student</p>
+        <img src="IMG_20240128_193405.jpg"  alt="pic of mee"  style="width:300px;height:300px;">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello, I'm Shakithiyan Kv, a second-year B.Tech student in Artificial Intelligence and Machine Learning at Rajalakshmi Engineering College. I'm passionate about exploring the realms of Machine Learning and Deep Learning, and I've undertaken projects applying ML concepts using Python. Proficient in Python fundamentals, I also have a solid grasp of C for Structural Programming and Java for Object-Oriented Programming.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <h3>Autonomous Underwater Vehicle for Dam Inspection and Repair</h3>
+            <p>
+<p>
+Autonomous under water drone capable of detecting cracks, corrosion and abrasions in the concrete
+walls and metal constructions of dams.
+            <br>
+The Drone is also capable of localised repair of said corrosion or cracks through remote operation by a
+technician.<br>
+The drone The drone comes with its own software app which ensures ease of use and also enables the
+historic maintenance records</p>
+            <img src="https://www.unmannedsystemstechnology.com/wp-content/uploads/2017/10/Nova-Ray-ROV.jpg" alt="Project 1 Image" style="width: 300px;height: 218 ;">
+        </div>
+        <!-- Project 2 -->
+        <div class="project">
+            <h3>GAS Monitor </h3>
+            <p>Develop a compact wrist-worn device with gas sensors to monitor hazardous gases in sewage environments. <br>Enable real-time wireless transmission of gas data to provide instant alerts when levels exceed safety thresholds.<br>  Design the device to be comfortable, durable, and suitable for the challenging conditions of sewage work.</p>
+            <img src="https://www.projectsof8051.com/project-photos/8162-low-cost-lpg-leakage-detector-with-buzzer-indication-using-microcontroller-22.jpg" alt="Project 2 Image" style="width:200px;height:150px">
+        </div>
+        <a href="My Resume (1).pdf" target="_blank" class="resume-link">Download Resume (PDF)</a>
+    </section>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+      <div id="modal-content" class="modal-content">
+          <span id="modal-close" class="close">&times;</span>
+      </div>
+  </div>
+
+  
+</section>
+
+
+<section id="contact">
+  <h2>Contact</h2>
+  <form id="contact-form" onsubmit="showConfirmation(); return false;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+  </form>
+
+  <!-- Confirmation Message Container -->
+  <div id="confirmation-container" class="confirmation-container">
+      <div class="confirmation-message">
+          Message sent successfully! Thank you for reaching out.
+      </div>
+  </div>
+</section>
+
+
+    <footer>
+        <p>&copy; 2024 Shakithiyan K V. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
